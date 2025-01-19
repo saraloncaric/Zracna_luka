@@ -20,7 +20,7 @@ zaposlenicima i parkiralištu, kao i pregled statistike i rezervaciju letova.
 ## Instalacija
 1. Klonirajte repozitorij:
    bash
-   git clone https://github.com/korisnik/Zracna_luka.git
+   git clone https://github.com/saraloncaric/Zracna_luka
    
 2. Instalirajte potrebne pakete:
    bash
