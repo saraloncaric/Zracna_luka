@@ -29,4 +29,4 @@ zaposlenicima i parkiralištu, kao i pregled statistike i rezervaciju letova.
 3. Pokrenite MySQL bazu podataka koristeći priloženu zracnaluka.sql skriptu za inicijalizaciju tablica.
 4. Konfigurirajte app.py:
    - Ažurirajte postavke baze podataka (MYSQL_HOST, MYSQL_USER, MYSQL_PASSWORD, MYSQL_DB) prema vašoj lokalnoj konfiguraciji.
-5. Pokrenite aplikaciju:
+5. Pokrenite aplikaciju
