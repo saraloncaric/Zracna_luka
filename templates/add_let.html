@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style/add_let.css">
+    <title>Unos Leta</title>
+</head>
+    <title>Unos Leta</title>
+<body>
+    <h2 align="left">Unos novog Leta</h2>
+
+    <form method="POST" action="{{ url_for('add_let') }}">
+
+        <label for="broj_leta">Broj Leta:</label>
+        <input type="text" id="broj_leta" name="broj_leta" required>
+        <br>
+
+        <label for="vrijeme_polaska">Vrijeme Polaska:</label>
+        <input type="datetime-local" id="vrijeme_polaska" name="vrijeme_polaska" required>
+        <br>
+
+        <label for="vrijeme_dolaska">Vrijeme Dolaska:</label>
+        <input type="datetime-local" id="vrijeme_dolaska" name="vrijeme_dolaska" required>
+        <br>
+
+        <label for="trenutni_status">Trenutni Status:</label>
+        <select id="trenutni_status" name="trenutni_status" required>
+            <option value="--">--</option>
+            <option value="zakazan">Zakazan</option>
+            <option value="odgođen">Odgođen</option>
+            <option value="otkazan">Otkazan</option>
+            <option value="u tijeku">U tijeku</option>
+        </select> 
+        <br>
+
+        <label for="id_avion">ID Aviona:</label>
+        <input type="number" id="id_avion" name="id_avion" required>
+        <br>
+        <label for="id_gate">ID Gate:</label>
+        <input type="number" id="id_gate" name="id_gate" required>
+        <br>
+        <label for="id_pista">ID Pista:</label>
+        <input type="number" id="id_pista" name="id_pista" required>
+        <br>
+   
+        <button type="submit">Dodaj Let</button>
+    </form>
+</body>
+</html>

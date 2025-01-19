@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('/static/images/index.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: #333333;
+}
+
+.top-nav {
+    background-color: rgba(44, 62, 80, 0.8); 
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top-nav ul li {
+    margin: 0 15px;
+}
+
+.top-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.top-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    margin: 50px 0 20px;
+    color: #223a5e;
+    font-size: 36px;
+}
+
+.container {
+    text-align: center;
+    padding: 30px 0;
+    margin: 20px auto;
+    width: 60%;
+    border-radius: 10px;
+    background: rgba(76, 76, 76, 0.081); 
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.container h1 {
+    font-size: 28px;
+    color: #f4f4f5;
+}
+
+form {
+    background: rgba(44, 62, 80, 0.078); 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+form label {
+    font-size: 18px;
+    color: #f4f4f5;
+}
+
+form input {
+    padding: 10px;
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: rgba(44, 62, 80, 0.8);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+form button:hover {
+    background-color: rgba(44, 62, 80, 1);
+}
+
+.result {
+    margin-top: 30px;
+    text-align: center;
+    background: rgba(44, 62, 80, 0.078); 
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.result h2 {
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.result p {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.footer {
+    background-color: rgba(44, 62, 80, 0.9); 
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer p {
+    font-size: 14px;
+}

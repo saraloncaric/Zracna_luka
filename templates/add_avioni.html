@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style/add_avioni.css">
+    <title>Dodaj Avion</title>
+    
+</head>
+<body>
+    <main class="body">
+        <h1>Dodaj novi avion</h1>
+        <form method="POST" action="{{ url_for('add_avioni') }}">
+
+        <label for="model">Model:</label>
+        <input type="text" id="model" name="model" required>
+        <br>
+        
+        <label for="kapacitet">Kapacitet:</label>
+        <input type="number" id="kapacitet" name="kapacitet" required>
+        <br>
+
+        <label for="godina_proizvodnje">Godina proizvodnje:</label>
+        <input type="number" id="godina_proizvodnje" name="godina_proizvodnje" required>
+        <br>
+        
+        <label for="id_kompanije">ID kompanije:</label>
+        <input type="number" id="id_kompanije"name="id_kompanije" required>
+        <br>
+
+        <button type="submit" value="Spremi zaposlenika">Dodaj avion</button>
+    </form>
+
+    </main>
+    
+</body>
+</html>

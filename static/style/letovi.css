@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #2c3e50;
+}
+
+.top-nav {
+    background-color: #2c3e50; 
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.top-nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.top-nav ul li {
+    margin: 0 15px;
+}
+
+.top-nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.top-nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.add-let-box {
+    background-color: #2c3e50; 
+    text-align: center;
+    padding: 0px 0;
+    margin: 0 auto;
+}
+.add-let {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 10px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.add-let:hover {
+    background-color: #34495e; 
+}
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h2 {
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 20px;
+}
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+th {
+    background-color: #2c3e50;
+    color: white;
+}
+.footer {
+    background-color: #2c3e50;  
+    color: white;
+    text-align: center;
+    padding: 5px;
+    position: static;
+    width: 100%;
+    bottom: 0;
+}

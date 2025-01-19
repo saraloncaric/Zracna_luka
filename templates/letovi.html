@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style/letovi.css">
+    <title>LETOVI</title>
+</head>
+
+<body>
+    <div class="top-nav">
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/">POČETNA</a></li>
+                <li><a href="/opcenito">OPĆENITO</a></li>
+                <li><a href="/avionske_kompanije">AVIONSKE KOMPANIJE</a></li>
+                <li><a href="/statistika">STATISTIKA</a></li>
+                <li><a href="/letovi">LETOVI</a></li>
+                <li><a href="/avioni">AVIONI</a></li>
+                <li><a href="/zaposlenici">ZAPOSLENICI</a></li>
+                <li><a href="/parkiraliste">PARKIRALIŠTE</a></li>
+                <li><a href="/rezervacija">REZERVACIJA</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="add-let-box">
+        <li align="center"><a href="/add_let" class="add-let">DODAJ LET</a></li>
+    </div>
+    <div class="container">
+        <h1>LETOVI</h1>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Broj leta</th>
+                    <th>Vrijeme polaska</th>
+                    <th>Vrijeme dolaska</th>
+                    <th>Trenutni status</th>
+                    <th>ID avion</th>
+                    <th>ID pista</th>
+                    <th>ID karta</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for let in letovi %}
+                <tr>
+                    <td>{{ let[0] }}</td>
+                    <td>{{ let[1] }}</td>
+                    <td>{{ let[2] }}</td>
+                    <td>{{ let[3] }}</td>
+                    <td>{{ let[4] }}</td>
+                    <td>{{ let[5] }}</td>
+                    <td>{{ let[6] }}</td>
+                    <td>{{ let[7] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <div class="footer">
+        <p align="center">2025 Zračna Luka. Sva prava pridržana</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style/add_zaposlenik.css">
+    <title>Dodaj Zaposlenika</title>
+    
+</head>
+<body>
+    <main class="body">
+        <h1>Dodaj novog zaposlenika</h1>
+        <form method="POST" action="{{ url_for('add_zaposlenik') }}">
+
+        <label for="ime">Ime:</label>
+        <input type="text" id="ime" name="ime" required>
+        <br>
+        
+        <label for="prezime">Prezime:</label>
+        <input type="text" id="prezime" name="prezime" required>
+        <br>
+
+        <label for="placa">Plaća:</label>
+        <input type="number" id="placa" name="placa" required>
+        <br>
+
+        <label for="pozicija">Pozicija</label><br>
+        <select name="pozicija" id="pozicija" required>
+            <option value="--">--</option>
+            <option value="Menadžer">Menadžer</option>
+            <option value="Radnik na pisti">Radnik na pisti</option>
+            <option value="Kontrolor leta">Kontrolor leta</option>
+            <option value="Tehničar">Tehničar</option>
+            <option value="Supervizor">Supervizor</option>
+        </select>
+        <br>
+
+        <label for="smjena">Smjena:</label>
+        <select id="smjena" name="smjena" required>
+            <option value="--">--</option>
+            <option value="Jutro">Jutro</option>
+            <option value="Popodne">Popodne</option>
+            <option value="Noc">Noć</option>
+        </select>
+        <br>
+
+        <label for="id_zracna_luka">ID Zračne luke:</label>
+        <input type="number" id="id_zracna_luka" name="id_zracna_luka" required>
+        <br>
+
+        <button type="submit" value="Spremi zaposlenika">Dodaj zaposlenika</button>
+    </form>
+    </main>
+</body>
+</html>
